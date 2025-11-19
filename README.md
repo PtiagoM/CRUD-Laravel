@@ -7,53 +7,124 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Projeto Laravel – Site Tema Livre (Middleware + CRUD)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este repositório contém um projeto desenvolvido em **Laravel**, com tema livre, atendendo aos seguintes requisitos da avaliação:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- ✅ Implementação de **Middleware personalizado**
+- ✅ Implementação de **CRUD completo**
+- ✅ Uso de **Eloquent ORM** e integração com **MySQL**
+- ✅ Publicação no **GitHub**
+- ✅ README com prints obrigatórios do **Banco de Dados**, **Middleware** e **CRUD**
+- ⚠️ **Views e Controllers possuem comentários**, conforme solicitado
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🎯 Tema do Projeto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Sistema simples de gestão de fornecedores, incluindo cadastro, listagem, edição e exclusão de registros.  
+A área interna é protegida com middleware de autenticação personalizado.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠 Tecnologias Utilizadas
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- PHP 8+
+- Laravel 10+
+- Bootstrap 5 (para layout das telas)
+- MySQL / MariaDB
+- Blade Templates
+- Composer
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 📂 Estrutura Principal do Projeto
 
-## Contributing
+<img width="297" height="583" alt="image" src="https://github.com/user-attachments/assets/5ed604f8-9aa4-4792-bae9-1b5f6e6b5717" />
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<img width="292" height="561" alt="image" src="https://github.com/user-attachments/assets/74b25caf-5deb-4d2d-9d21-8b41a3a3abb8" />
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## ⚙️ Como Executar o Projeto Localmente
 
-## License
+### 1. Clonar o repositório
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+git clone https://github.com/PtiagoM/CRUD-Laravel.git
+cd CRUD-Laravel
+```
+
+### 2. Instalar dependências
+
+```bash
+composer install
+```
+
+### 3. Configurar o arquivo `.env`
+
+```env
+DB_DATABASE=nome_do_banco
+DB_USERNAME=seu_usuario
+DB_PASSWORD=sua_senha
+```
+
+### 4. Gerar chave
+
+```bash
+php artisan key:generate
+```
+
+### 5. Rodar migrações
+
+```bash
+php artisan migrate
+```
+
+### 6. Iniciar servidor
+
+```bash
+php artisan serve
+```
+
+---
+
+### 1️⃣ Banco de Dados
+
+<img width="1197" height="393" alt="image" src="https://github.com/user-attachments/assets/a7d0175c-3c37-4608-a506-be4f76bf0319" />
+
+
+### 2️⃣ Middleware
+
+<img width="983" height="545" alt="image" src="https://github.com/user-attachments/assets/a02a3ed0-8fd0-4607-88f2-5cee687a44c2" />
+
+
+### 3️⃣ Login
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1d8365ff-ffe0-4450-81c9-74d5dfda3f71" />
+
+
+### 4️⃣ Home
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ca0b960c-8507-48fb-bf17-9864220ffbf9" />
+
+
+### 5️⃣ Consultar
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/86fb5624-728d-4e78-9466-a8a680edf49f" />
+
+### 6️⃣ Adicionar
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8c6d4f32-aa56-404a-84a1-c2609f359852" />
+
+### 7️⃣ Listar
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/57e0217d-bb7b-45a6-91f4-8110d93935d9" />
+
+---
+
+## 👨‍🏫 Autor
+
+- **Nome:** Tiago Pimentel Muniz  
